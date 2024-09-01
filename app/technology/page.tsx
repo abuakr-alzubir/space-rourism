@@ -4,7 +4,7 @@ import React from "react";
 
 const Technology = () => {
   return (
-    <Section clasaName="bg-[url('/home/background-home-desktop.jpg')] h-[100vh]">
+    <Section clasaName="bg-[url('/technology/background-technology-mobile.jpg')] md:bg-[url('/technology/background-technology-tablet.jpg')] lg:bg-[url('/technology/background-technology-desktop.jpg')] h-[100vh]">
       <Containera className="text-white">technology</Containera>
     </Section>
   );
