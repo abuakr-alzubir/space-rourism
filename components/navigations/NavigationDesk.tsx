@@ -7,7 +7,8 @@ export const NavigationDesk = () => {
     <header className="absolute top-0 right-0 w-full pt-10 hidden lg:block">
       <div className="grid grid-cols-[8rem_1fr]">
         <div className="flex justify-center items-center">
-          <Logo custom="16" />
+          {/* <Logo custom="16" /> */}
+          <div className="w-16 h-16 bg-white rounded-full"></div>
         </div>
         <Links hasNubering hasLine />
       </div>

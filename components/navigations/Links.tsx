@@ -29,9 +29,9 @@ export const Links: React.FC<LinksProps> = ({
       )}
 
       <ul
-        className={`flex text-white bg-[rgba(255,255,255,0.22)] w-[70%] items-center justify-center ${
+        className={`flex  bg-[rgba(255,255,255,0.22)] w-[70%] items-center justify-center ${
           isTablet ? "py-12" : ""
-        } ${isvertival ? "flex-col gap-y-4 text-black" : "flex-row gap-x-4 h-16"}`}
+        } ${isvertival ? "flex-col gap-y-4 text-neutral-950" : "flex-row gap-x-4 h-16 text-white"}`}
       >
         {links.map((link, i) => (
           <li key={link.name}>

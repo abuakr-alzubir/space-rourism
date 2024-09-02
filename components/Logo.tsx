@@ -8,7 +8,7 @@ type LogoData = {
 export const Logo = ({ custom, className }: LogoData) => {
   return (
     <div
-      className={`bg-white rounded-full w-${custom} h-${custom} ${className}`}
+      className={`bg-green-500 rounded-full w-${custom} h-${custom} ${className}`}
     ></div>
   );
 };
