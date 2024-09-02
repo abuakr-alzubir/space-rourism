@@ -39,9 +39,9 @@ export const Links: React.FC<LinksProps> = ({
           return (
             <li
               key={link.name}
-              className={`hover:bg-[rgba(193,253,255,0.1)] border-white py-4 px-1 ${
+              className={`hover:border-b-white hover:border-b-4 py-4 px-1 ${
                 pathName === link.href ? "border-b-4 border-white" : ""
-              }`}
+              } ${isvertival && pathName === link.href? " border-b-4 border-neutral-500 hover:border-b-4 hover:border-neutral-500": ""}`}
             >
               <Link href={link.href} onClick={onClick}>
                 {hasNubering
