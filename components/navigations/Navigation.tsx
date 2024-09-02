@@ -30,7 +30,7 @@ export const Navigation = () => {
       <div className="flex justify-between items-center px-8">
         {/* <Logo custom="16" /> */}
         <div className="w-16 h-16 bg-white rounded-full"></div>
-        <button onClick={toggleMenu} className="text-white">
+        <button onClick={toggleMenu} className="text-black">
           {isOpen ? <CgClose size={60} /> : <CiMenuBurger size={60} />}
         </button>
       </div>

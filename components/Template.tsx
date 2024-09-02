@@ -44,7 +44,8 @@ const Template = ({ children }: { children: React.ReactNode }) => {
 
   return (
     <main
-    className={`bg-cover bg-[url('/${path}/background-${path}-mobile.jpg')] md:bg-[url('/${path}/background-${path}-tablet.jpg')] lg:bg-[url('/${path}/background-${path}-desktop.jpg')]`}
+    className="bg-green-200"
+    // className={`bg-cover bg-[url('/${path}/background-${path}-mobile.jpg')] md:bg-[url('/${path}/background-${path}-tablet.jpg')] lg:bg-[url('/${path}/background-${path}-desktop.jpg')]`}
     >
       <Section>
         <Containera>

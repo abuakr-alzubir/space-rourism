@@ -32,25 +32,25 @@ export const Links: React.FC<LinksProps> = ({
         } ${
           isvertival
             ? "flex-col gap-y-4 text-neutral-950"
-            : "flex-row gap-x-4 h-16 text-white"
+            : "flex-row gap-x-4 h-16 text-black"
         }`}
       >
         {links.map((link, i) => {
           return (
-              <li key={link.name} className={`hover:border-b-white hover:border-b-4 py-4 h-full px-2 ${
-                  pathName === link.href ? "border-b-4 border-white" : ""
+            <Link key={link.name} href={link.href} onClick={onClick}>
+              <li className={`hover:border-b-black hover:border-b-4 py-4 h-full px-2 ${
+                  pathName === link.href ? "border-b-4 border-black" : ""
                 } ${isvertival ? "hover:border-b-neutral-500 w-[50vw] hover:border-b-4 px-" : ""} ${
                   isvertival && pathName === link.href
                     ? "border-b-4 border-b-neutral-500 hover:border-b-4 hover:border-b-neutral-500"
                     : ""
                 }`}
-              >
-                <Link href={link.href} onClick={onClick}>
+                >
                 {hasNubering
                   ? `0${i + 1} ${link.name.toUpperCase()}`
                   : link.name.toUpperCase()}
-            </Link>
               </li>
+            </Link>
           );
         })}
       </ul>
