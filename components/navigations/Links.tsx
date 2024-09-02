@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -27,8 +27,8 @@ export const Links: React.FC<LinksProps> = ({
       )}
 
       <ul
-        className={`flex  bg-[rgba(255,255,255,0.22)] w-[70%] items-center justify-center ${
-          isTablet ? "py-12" : ""
+        className={`flex text-center bg-[rgba(255,255,255,0.22)] w-[${hasLine? "70%" : "100%"}] items-center justify-center ${
+          isTablet ? "py-12 w-[80%]" : ""
         } ${
           isvertival
             ? "flex-col gap-y-4 text-neutral-950"
@@ -37,18 +37,21 @@ export const Links: React.FC<LinksProps> = ({
       >
         {links.map((link, i) => {
           return (
-            <li
-              key={link.name}
-              className={`hover:border-b-white hover:border-b-4 py-4 px-1 ${
-                pathName === link.href ? "border-b-4 border-white" : ""
-              } ${isvertival && pathName === link.href? " border-b-4 border-neutral-500 hover:border-b-4 hover:border-neutral-500": ""}`}
-            >
-              <Link href={link.href} onClick={onClick}>
+            <Link key={link.name} href={link.href} onClick={onClick}>
+              <li
+                className={`hover:border-b-white hover:border-b-4 py-4 h-full px-2 ${
+                  pathName === link.href ? "border-b-4 border-white" : ""
+                } ${isvertival ? "hover:border-b-neutral-500 w-[50vw] hover:border-b-4 px-" : ""} ${
+                  isvertival && pathName === link.href
+                    ? "border-b-4 border-b-neutral-500 hover:border-b-4 hover:border-b-neutral-500"
+                    : ""
+                }`}
+              >
                 {hasNubering
                   ? `0${i + 1} ${link.name.toUpperCase()}`
                   : link.name.toUpperCase()}
-              </Link>
-            </li>
+              </li>
+            </Link>
           );
         })}
       </ul>
