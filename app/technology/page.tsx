@@ -1,28 +1,10 @@
-"use client";
-import { Containera } from "@/components/Containera";
-import { Section } from "@/components/Section";
-import React from "react";
-import { usePathname } from "next/navigation";
-import { useEffect } from "react";
+import Template from "@/components/Template";
 
-const Technology = () => {
-  const pathLink = usePathname().split("");
-  const pathName = pathLink.filter((item) => item !== "/").join("");
-
-  useEffect(() => {
-    document.body.className = `bg-[url('/${pathName}/background-${pathName}-mobile.jpg')] md:bg-[url('/${pathName}/background-${pathName}-tablet.jpg')] lg:bg-[url('/${pathName}/background-${pathName}-desktop.jpg')] bg-cover`;
-  }, [pathName]);
+export default function Technology() {
   return (
-    <main>
-      <Section>
-        <Containera className="text-white">
-          <div className="flex justify-center items-center h-[calc(100vh-100px)]">
-            <h1>TECHNOLOGY PAGE</h1>
-          </div>
-        </Containera>
-      </Section>
-    </main>
+    <Template>
+      <h1>Technology page</h1>
+    </Template>
   );
-};
+}
 
-export default Technology;

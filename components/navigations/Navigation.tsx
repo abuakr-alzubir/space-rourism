@@ -2,7 +2,7 @@
 
 import React, { useEffect } from "react";
 import { Links } from "./Links";
-import { Logo } from "../Logo";
+// import { Logo } from "../Logo";
 import { CgClose } from "react-icons/cg";
 import { CiMenuBurger } from "react-icons/ci";
 

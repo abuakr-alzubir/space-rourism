@@ -37,9 +37,7 @@ export const Links: React.FC<LinksProps> = ({
       >
         {links.map((link, i) => {
           return (
-            <Link key={link.name} href={link.href} onClick={onClick}>
-              <li
-                className={`hover:border-b-white hover:border-b-4 py-4 h-full px-2 ${
+              <li key={link.name} className={`hover:border-b-white hover:border-b-4 py-4 h-full px-2 ${
                   pathName === link.href ? "border-b-4 border-white" : ""
                 } ${isvertival ? "hover:border-b-neutral-500 w-[50vw] hover:border-b-4 px-" : ""} ${
                   isvertival && pathName === link.href
@@ -47,11 +45,12 @@ export const Links: React.FC<LinksProps> = ({
                     : ""
                 }`}
               >
+                <Link href={link.href} onClick={onClick}>
                 {hasNubering
                   ? `0${i + 1} ${link.name.toUpperCase()}`
                   : link.name.toUpperCase()}
-              </li>
             </Link>
+              </li>
           );
         })}
       </ul>
