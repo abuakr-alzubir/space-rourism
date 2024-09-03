@@ -2,7 +2,7 @@
 
 import React, { useEffect } from "react";
 import { Links } from "./Links";
-// import { Logo } from "../Logo";
+import { Logo } from "../Logo";
 import { CgClose } from "react-icons/cg";
 import { CiMenuBurger } from "react-icons/ci";
 
@@ -28,9 +28,9 @@ export const Navigation = () => {
   return (
     <header className="absolute top-0 right-0 w-full pt-4 md:hidden">
       <div className="flex justify-between items-center px-8">
-        {/* <Logo custom="16" /> */}
-        <div className="w-16 h-16 bg-white rounded-full"></div>
-        <button onClick={toggleMenu} className="text-black">
+        <Logo custom="16" />
+        {/* <div className="w-16 h-16 bg-white rounded-full"></div> */}
+        <button onClick={toggleMenu} className="text-white">
           {isOpen ? <CgClose size={60} /> : <CiMenuBurger size={60} />}
         </button>
       </div>

@@ -23,7 +23,7 @@ export const Links: React.FC<LinksProps> = ({
   return (
     <div className={`${!isvertival ? "flex items-center justify-end" : ""}`}>
       {hasLine && (
-        <div className="w-[38%] h-1 bg-[rgba(255,255,255,0.52)] mr-[-30px] z-10"></div>
+        <div className="w-[38%] h-[2px] bg-[rgba(255,255,255,0.52)] mr-[-30px] z-10"></div>
       )}
 
       <ul
