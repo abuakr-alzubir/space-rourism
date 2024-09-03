@@ -25,7 +25,7 @@ export default function RootLayout({
         <NavigationTab />
         <Navigation />
         {children}
-        </body>
+      </body>
     </html>
   );
 }
