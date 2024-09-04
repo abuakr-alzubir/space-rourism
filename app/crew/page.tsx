@@ -1,4 +1,3 @@
-import MainTage from "@/components/MainTage";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
