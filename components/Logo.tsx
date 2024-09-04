@@ -1,14 +1,18 @@
 import React from "react";
+import Image from "next/image";
+import Link from "next/link";
 
 type LogoData = {
   custom?: string;
   className?: string;
 };
 
-export const Logo = ({ custom, className }: LogoData) => {
+const Logo = ({ custom ="40", className }: LogoData) => {
   return (
-    <div
-      className={`bg-green-500 rounded-full w-${custom} h-${custom} ${className}`}
-    ></div>
+    <Link href={"/"}>
+      <Image src={"/shared/logo.svg"} alt="logo" width={+custom} height={+custom} />
+    </Link>
   );
 };
+
+export default Logo;

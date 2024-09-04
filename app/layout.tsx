@@ -1,10 +1,8 @@
-import React, { useEffect } from "react";
 import type { Metadata } from "next";
 import { Open_Sans } from "next/font/google";
 import "./globals.css";
-import { NavigationDesk } from "@/components/navigations/NavigationDesk";
-import { NavigationTab } from "@/components/navigations/NavigationTab";
-import { Navigation } from "@/components/navigations/Navigation";
+import BgPages from "@/components/BgPages";
+import Navigation from "@/components/Navigation";
 
 const inter = Open_Sans({ subsets: ["latin"] });
 
@@ -21,10 +19,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className}`}>
-        <NavigationDesk />
-        <NavigationTab />
-        <Navigation />
-        {children}
+        <main className=" relative text-white flex flex-col justify-between h-screen w-screen">
+          <BgPages />
+          <Navigation />
+          <div className="container">{children}</div>
+        </main>
       </body>
     </html>
   );

@@ -7,8 +7,8 @@ export const metadata: Metadata = {
 
 export default function Crew() {
   return (
-    <MainTage className="bg-[url('/crew/background-crew-mobile.jpg')] md:bg-[url('/crew/background-crew-tablet.jpg')] lg:bg-[url('/crew/background-crew-desktop.jpg')]">
+    <>
       <h1>crew page</h1>
-    </MainTage>
+    </>
   );
 }
