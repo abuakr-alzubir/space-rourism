@@ -9,7 +9,7 @@ type LogoData = {
 
 const Logo = ({ custom ="40", className }: LogoData) => {
   return (
-    <Link href={"/"}>
+    <Link href={"/"} className="md:mt-4">
       <Image src={"/shared/logo.svg"} alt="logo" width={+custom} height={+custom} />
     </Link>
   );
