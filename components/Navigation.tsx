@@ -25,10 +25,10 @@ const Navigation = () => {
           </button>
         )}
         {isOpen && (
-          <nav className=" md:hidden flex flex-col gap-y-4 min-h-screen absolute right-0 p-4 pt-20 top-0 backdrop-blur-lg bg-white/5 backdrop-brightness-150 min-w-[60vw]">
+          <nav className=" md:hidden flex flex-col gap-y-1 min-h-screen absolute right-0 px-8 pt-20 top-0 backdrop-blur-lg bg-white/5 backdrop-brightness-150 min-w-[60vw]">
             <Links isVertical />
             {isOpen && (
-                <button className="absolute right-8 top-8" onClick={toggleMenu}>
+                <button className="absolute right-4 top-4" onClick={toggleMenu}>
                 {isOpen ? <CgClose size={40}  className="text-red-400"/> : "" }
               </button>
             )}

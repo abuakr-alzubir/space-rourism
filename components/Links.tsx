@@ -20,7 +20,7 @@ const Links:React.FC<LinkdData> = ({onClick, isVertical=false}) => {
           href={link.href}
           onClick={onClick}
           className={cn(
-            `flex items-center gap-x-1 pt-4 lg:pt-0 uppercase h-24 lg:h-[10vh] ${isVertical? "h-16 pb-1" : ""} ${
+            `flex items-center gap-x-1 pt-4 lg:pt-0 uppercase h-24 lg:h-[10vh] ${isVertical? "h-16 pb-2 hover:text-green-400" : ""} ${
               pathName === link.href ? "border-b border-white" : ""
             }`
           )}
