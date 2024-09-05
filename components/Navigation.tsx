@@ -10,7 +10,7 @@ const Navigation = () => {
   const toggleMenu = () => setIsOpen((prev) => !prev);
   // const closeNav = () => setIsOpen(false);
   return (
-    <header className="flex justify-between items-center h-24 md:h-[20vh] gap-x-10 lg:pt-10 md:pt-0 md:px-20 px-4 relative">
+    <header className="flex justify-between items-center h-24 md:max-h-[20vh] gap-x-10 lg:pt-10 md:pt-0 md:px-20 px-4 relative">
       <Logo custom="50" />
 
       <nav className="hidden md:flex items-center justif y-center px-20 gap-x-4  absolute right-0 z-20 backdrop-blur-lg bg-white/5 backdrop-brightness-150 ">
