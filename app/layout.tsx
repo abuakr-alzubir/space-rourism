@@ -19,10 +19,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className}`}>
-        <main className=" relative text-white flex flex-col justify-between h-screen w-screen">
+        <main className=" relative text-white h-screen w-screen">
           <BgPages />
           <Navigation />
-          <div className="container">{children}</div>
+          <div className="container flex basis-80 items-centre pt-20">{children}</div>
         </main>
       </body>
     </html>

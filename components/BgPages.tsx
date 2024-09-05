@@ -115,7 +115,7 @@ const BgPages = () => {
         <div className="absolute top-0 left-0 -z-20">
           <Image
             priority
-            src="/technology/background-technology-mobile.jpg"
+            src="/technology/background-technology-mobile.jpg" 
             width={0}
             height={0}
             sizes="100%"
