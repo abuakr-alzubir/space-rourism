@@ -22,7 +22,7 @@ export default function RootLayout({
         <main className=" relative text-white h-screen w-screen">
           <BgPages />
           <Navigation />
-          <div className="container flex basis-80 items-centre justify-center pt-20">{children}</div>
+          <div className="container">{children}</div>
         </main>
       </body>
     </html>

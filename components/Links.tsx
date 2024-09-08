@@ -36,8 +36,8 @@ const Links:React.FC<LinkdData> = ({onClick, isVertical=false}) => {
 export default Links;
 
 const links = [
-  { href: "/", lable: "home", number: "01" },
+  { href: "/", lable: "home", number: "00" },
+  { href: "/destination", lable: "desctination", number: "01" },
   { href: "/crew", lable: "crew", number: "02" },
-  { href: "/destination", lable: "desctination", number: "03" },
-  { href: "/technology", lable: "technology", number: "04" },
+  { href: "/technology", lable: "technology", number: "03" },
 ];
