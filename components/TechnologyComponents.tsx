@@ -33,10 +33,10 @@ const TechnologyComponents = () => {
           ))}
         </div>
           {technology.map((item, idx) => (
-            <div key={idx} className={cn(`grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8 ${currentNav !== idx ? 'hidden' : ''}`)}>
+            <div key={idx} className={cn(`grid grid-cols-1 lg:grid-cols-2 gap-4 pb:8 lg:gap-8 ${currentNav !== idx ? 'hidden' : ''}`)}>
               <div className="text-slate-400">
                 <span className="uppercase">the terminlogy...</span>
-                <h2 className="text-slate-200 uppercase text-5xl tracking-widest py-4">{item.name}</h2>
+                <h2 className="text-slate-200 uppercase text-4xl md:text-6xl tracking-wide md:tracking-widest py-4">{item.name}</h2>
                 <p className="tracking-wide text-justify">{item.description}</p>
               </div>
               <div>
