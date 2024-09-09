@@ -7,7 +7,7 @@ import Image from "next/image";
 const CrewComponent = () => {
   const [currentNav, setCurrentNav] = React.useState(0);
   return (
-    <div className="relative">
+    <div className="md:relative clear-none">
       <div className="grid grid-cols-1 ">
         {crew.map((item, idx) => (
           <div
@@ -36,7 +36,7 @@ const CrewComponent = () => {
             </div>
           </div>
         ))}
-        <div className="absolute bottom-0">
+        <div className="absolute bottom-24 md:bottom-0">
           <div className="flex gap-6">
             {crew.map((item, idx) => (
               <button
