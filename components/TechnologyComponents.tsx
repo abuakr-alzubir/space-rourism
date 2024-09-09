@@ -3,9 +3,17 @@ import React from "react";
 import { technology } from "@/app/data";
 import { cn } from "@/app/utils/cn";
 import Image from "next/image";
+import {useEffect,useState} from 'react'
+import next from "next";
 
 const TechnologyComponents = () => {
   const [currentNav, setCurrentNav] = React.useState(0);
+  const [screenClientWidth, setScreenClientWidth] = useState(0)
+
+  useEffect(()=>{
+    const element = document.body.clientWidth;
+    setScreenClientWidth(element);
+  },[])
   return (
     <div>
       <div className="grid grdi-cols-1 lg:grid-cols-[5rem_1fr] gap-4 md:gap-0 lg:gap-8">
@@ -33,7 +41,7 @@ const TechnologyComponents = () => {
               </div>
               <div>
                 <Image
-                  src={document.body.clientWidth > 1024? item.images.portrait : item.images.landscape}
+                  src={screenClientWidth > 1024? item.images.portrait : item.images.landscape}
                   alt="technology"
                   width={0}
                   height={0}
