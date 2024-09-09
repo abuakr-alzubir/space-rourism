@@ -13,7 +13,7 @@ const CrewComponent = () => {
           <div
             key={idx}
             className={cn(
-              `grid grid-cols-1 lg:grid-cols-[24rem_1fr] gap-4 items-center lg:gap-8 ${
+              `grid grid-cols-1 lg:grid-cols-[24rem_1fr] gap-0 items-center lg:gap-8 ${
                 currentNav !== idx ? "hidden" : ""
               }`
             )}
@@ -28,9 +28,10 @@ const CrewComponent = () => {
                 src={item.images.webp}
                 width={0}
                 height={0}
+                priority
                 alt="image crew member"
                 sizes="100vw"
-                className="w-64 md:w-72 lg:w-96"
+                className="w-32 md:w-72 lg:w-96"
               />
             </div>
           </div>
