@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { cn } from "@/app/utils/cn";
-import { destinations } from "@/app/datat";
+import { destinations } from "@/app/data";
 import Image from "next/image";
 
 const DestComponent = () => {
