@@ -6,7 +6,6 @@ import Image from "next/image";
 
 const TechnologyComponents = () => {
   const [currentNav, setCurrentNav] = React.useState(0);
-  console.log(document.body.clientWidth>1024? 'lg':'md');
   return (
     <div>
       <div className="grid grdi-cols-1 lg:grid-cols-[5rem_1fr] gap-4 md:gap-0 lg:gap-8">
